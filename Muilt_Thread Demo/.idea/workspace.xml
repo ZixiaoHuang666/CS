@@ -15,7 +15,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="ProjectId" id="1qWSRywTflsJXwuZwiaFGa1UVp2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,6 +33,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Application.TestCreateThread03">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -131,12 +134,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617193848928</updated>
-      <workItem from="1617193858971" duration="7934000" />
+      <workItem from="1617193858971" duration="10581000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1617198453642">
@@ -147,10 +166,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="395" y="55" key="DetectedRootsChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1617196969971" />
-    <state x="323" y="81" key="FileChooserDialogImpl" timestamp="1617196966640">
+    <state x="323" y="81" key="FileChooserDialogImpl" timestamp="1617215083998">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="323" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617196966640" />
+    <state x="323" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617215083998" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1617208039388">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -167,10 +186,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617208039388" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1617196979234">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1617215718982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1617196979234" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1617215718982" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617216054555">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617216054555" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617216027811">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1617216027811" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1617198123513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
