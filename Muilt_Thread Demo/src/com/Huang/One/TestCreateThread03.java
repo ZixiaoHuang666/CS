@@ -14,8 +14,8 @@ public class TestCreateThread03 implements Runnable{
         for(int i =0; i< 2000; i++){
             System.out.println("Main"+i);
         }
-        System.out.println("hsssss");
         System.out.println("");
+
 
     }
 }
