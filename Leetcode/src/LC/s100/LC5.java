@@ -1,5 +1,5 @@
 package LC.s100;
-
+//更好的中心扩散法等见Solution explanation
 class LC5 {
     public String longestPalindrome(String s){
         if(s == null || s.length() == 0)return null;
