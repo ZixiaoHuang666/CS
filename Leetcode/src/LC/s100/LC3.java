@@ -22,3 +22,4 @@ class LC3 {
         return max;
     }
 }
+
