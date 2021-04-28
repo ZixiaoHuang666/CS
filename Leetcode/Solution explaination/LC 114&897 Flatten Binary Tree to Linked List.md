@@ -1,4 +1,4 @@
-# LC 114 [Flatten Binary Tree to Linked List](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)
+# LC 114&897 [Flatten Binary Tree to Linked List](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)
 
 ![image-20210419154049675](C:\Users\ZiXiao Huang\AppData\Roaming\Typora\typora-user-images\image-20210419154049675.png)
 
@@ -88,6 +88,90 @@ class Solution {
     }
 }
 ~~~
+
+# LC 897 [Increasing Order Search Tree](https://leetcode-cn.com/problems/increasing-order-search-tree/)
+
+这道题是114题的变式，其实感觉难度会更大一点，这道题是中序遍历展开
+
+一共是三种方法，其中先中序遍历在依次拆开的方法省略
+
+## Recursion
+
+递归的方法还是相对好想的，我们假设函数目的就是把链解成平的，并且返回开始的那个，
+
+那么我们的判断情况分成左，根，右，首先判断根为null，返回null，其次把左，右树分别解开，如果左树不为null，链接再连接右树，具体实现如下
+
+~~~java
+class Solution {
+    public TreeNode increasingBST(TreeNode root) {
+        if(root == null) return null;
+        TreeNode left = null,right = null,index = null,head = null;
+        if(root.left != null){
+            left = increasingBST(root.left);
+            root.left = null;
+        }
+        if(root.right != null){
+            right = increasingBST(root.right);
+            root.right = null;
+        }
+        if(left != null){
+            index = left;
+            head = left;
+            while(index.right != null){
+                index = index.right;
+            }
+            index.right = root;
+            root.right = right;
+            return head;
+        }
+        else{
+            index = root;
+            head = root;
+            head.right = right;
+            return head;
+        }
+    }
+}
+~~~
+
+## 迭代
+
+迭代的方法就要恶心一些，中序遍历，同时要不断进行链接解除
+
+~~~java
+class Solution {
+    public TreeNode increasingBST(TreeNode root) {
+        TreeNode head = null;
+        if(root == null) return null;
+        LinkedList<TreeNode> stack = new LinkedList<>();
+        TreeNode cur = root,pre = null;
+        while(cur != null || !stack.isEmpty()){
+            while(cur != null){
+                TreeNode next = cur.left;
+                cur.left = null;
+                stack.add(cur);
+                cur = next;
+            }
+            cur = stack.pollLast();
+            if(pre != null){
+                pre.left = null;
+                pre.right = cur;
+            }
+            else{
+                head = cur;
+            }
+            pre = cur;
+
+            cur = cur.right;
+        }
+        return head;
+    }
+}
+~~~
+
+
+
+
 
 
 
