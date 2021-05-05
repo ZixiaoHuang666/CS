@@ -110,6 +110,16 @@ class Solution {
 }
 ~~~
 
+## 总结
+
+这道题打开了新视野，动态规划数组不需要存储全部状态，只用存储部分状态的时候也就没必要开完整的数组去存储
+
+https://leetcode-cn.com/problems/frog-jump/solution/gong-shui-san-xie-yi-ti-duo-jie-jiang-di-74fw/
+
+我们最后来看看三叶姐的题解
+
+再看题解的时候发现存在更好的方法，不用转成String 直接index*10000+jump就好
+
 
 
 
